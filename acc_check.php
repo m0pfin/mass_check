@@ -13,7 +13,8 @@ ini_set('display_startup_errors', 1);
 
 
 $argv[1] = $_POST['acc'];
-
+//$gen  = rand(); // Генерируем случайное число
+//$name = 'live_'.$gen.'.txt'; // Генерируем случайное имя для файла
 
 if(!empty($argv[1])) {
     if(isset($argv[1])) {
@@ -58,5 +59,3 @@ function cekAkunFb($email, $passwd) { // чтобы писать в файл д�
     }else echo $empas." - <font color='red'>Невалид</font>".PHP_EOL.'<br>';
 
 }
-
-
